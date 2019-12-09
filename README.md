@@ -7,7 +7,7 @@ ng add @nguniversal/express-engine --clientProject angular-practices
 "start:heroku": "node dist/server",
 "postinstall": "npm run build:ssr"
 
-indo: https://www.youtube.com/watch?time_continue=104&v=-YrvPTHgROQ
+info: https://www.youtube.com/watch?time_continue=104&v=-YrvPTHgROQ
 
 # AngularPractices
 
