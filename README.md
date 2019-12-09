@@ -1,3 +1,14 @@
+https://angular-practices.herokuapp.com/
+
+1. https://angular.io/guide/universal : 
+ng add @nguniversal/express-engine --clientProject angular-practices
+2. creando el archivo: Procfile y añadiendo: web: npm run start:heroku
+3. añadir en package.json: 
+"start:heroku": "node dist/server",
+"postinstall": "npm run build:ssr"
+
+indo: https://www.youtube.com/watch?time_continue=104&v=-YrvPTHgROQ
+
 # AngularPractices
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.20.
