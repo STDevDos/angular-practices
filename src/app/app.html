@@ -1,8 +1,13 @@
 <!--<router-outlet></router-outlet>-->
 
 <h1>Angular 19</h1>
-<h2>Title: {{title}}</h2>
+<h2>Title: {{title}} </h2>
 <h3>Name: {{name}}</h3>
 
 <button (click)="hello()">Run Hello</button>
 <p>{{ helloV2() }}</p>
+
+<p>{{ title | capitalize }}</p>
+<p>{{ name | capitalize }}</p>
+<p>{{ name | shortName }}</p>
+<p>{{ birthDate | age }}</p>
