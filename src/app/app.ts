@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterOutlet, RouterLink } from '@angular/router';
 import {CapitalizePipe} from './pipes/capitalize-pipe';
 import {AgePipe} from './pipes/age-pipe';
 import {ShortNamePipe} from './pipes/short-name-pipe';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, CapitalizePipe, AgePipe, ShortNamePipe],
+  imports: [RouterOutlet, RouterLink, CapitalizePipe, AgePipe, ShortNamePipe],
   templateUrl: './app.html',
   styleUrls: ['./app.css'] // ✅ must be "styleUrls" (array)
 })
