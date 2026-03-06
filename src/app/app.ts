@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { RouterOutlet, RouterLink } from '@angular/router';
-import {CapitalizePipe} from './pipes/capitalize-pipe';
-import {AgePipe} from './pipes/age-pipe';
-import {ShortNamePipe} from './pipes/short-name-pipe';
+import { CapitalizePipe } from './pipes/capitalize-pipe';
+import { AgePipe } from './pipes/age-pipe';
+import { ShortNamePipe } from './pipes/short-name-pipe';
 
 @Component({
   selector: 'app-root',
@@ -29,6 +29,10 @@ export class App {
 
   helloV2(): string {
     return `Hello ${this.name}, your title is ${this.title}`;
+  }
+
+  greeting(): string {
+    return `Hola, ${this.name}! Bienvenido a tu camino hacia Angular.`;
   }
 
 }

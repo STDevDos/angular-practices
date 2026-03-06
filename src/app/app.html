@@ -1,17 +1,53 @@
+<header>
+  <h1>{{ name | capitalize }}</h1>
+  <p>Desarrollador Web | Aprendiendo Angular</p>
+</header>
+
 <nav>
-  <a routerLink="/test">Ir a Test</a>
+  <ul>
+    <li><a routerLink="/test">Test Component</a></li>
+    <li><a routerLink="/">Inicio</a></li>
+    <li><a href="#servicio">Servicio</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
 </nav>
 
-<router-outlet></router-outlet>
+<main>
+  <section>
+    <h2>Angular 19 Practice</h2>
+    <h3>Title: {{ title | capitalize }}</h3>
+    <h3>Name: {{ name | capitalize }}</h3>
+    <p>{{ greeting() }}</p>
+  </section>
 
-<h1>Angular 19</h1>
-<h2>Title: {{title}} </h2>
-<h3>Name: {{name}}</h3>
+  <section>
+    <button (click)="hello()">Run Hello Console</button>
+    <p>{{ helloV2() }}</p>
+  </section>
 
-<button (click)="hello()">Run Hello</button>
-<p>{{ helloV2() }}</p>
+  <section>
+    <p><strong>Pipes Demonstration:</strong></p>
+    <ul>
+      <li>Capitalize: {{ name | capitalize }}</li>
+      <li>Short Name: {{ name | shortName }}</li>
+      <li>Age calculation: {{ birthDate | age }}</li>
+    </ul>
+  </section>
 
-<p>{{ title | capitalize }}</p>
-<p>{{ name | capitalize }}</p>
-<p>{{ name | shortName }}</p>
-<p>{{ birthDate | age }}</p>
+  <section>
+    <img src="https://placehold.co/300" alt="Imagen de prueba" />
+  </section>
+
+  <section>
+    <button>Contáctame</button>
+  </section>
+
+  <!-- Router outlet to render navigated components -->
+  <div class="router-content">
+    <router-outlet></router-outlet>
+  </div>
+</main>
+
+<footer>
+  <p>&copy; {{ year }} {{ name | capitalize }}</p>
+</footer>
